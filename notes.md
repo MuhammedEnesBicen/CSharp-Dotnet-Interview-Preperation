@@ -13,4 +13,8 @@ str => Length arr=> Count
 List<char> chars = str.ToCharArray().ToList();
 new string(chars.ToArray()); chars is List<char>
 
-SortedDictionary
+SortedDictionary is a Collection Type
+
+
+## Array.Sort(parameter_array)
+An important thing to keep in mind; when you sort array via this method it doesnt return anything, it makes changes on original array

@@ -6,3 +6,7 @@
 - Question 4 Palindrome String Checker
 - Question 5 Number Palindrome Checker
 - Question 6 FizzBuzz
+
+
+#### Interview Questions
+- IQ 1 Reverse Array Based On Last Character (Doğuş Teknoloji Coding test on Coensio platform)
