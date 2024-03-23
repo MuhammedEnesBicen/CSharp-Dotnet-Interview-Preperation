@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 void log(dynamic arg)
 {
-    if (arg is System.String[])
+    if (arg is System.String[] || arg is List<int>)
     {
         arg = String.Join(", ", arg);
     }
@@ -16,7 +16,8 @@ void log(dynamic arg)
 //var result = Questions.Q5_NumberPalindromeChecker(1234564321);
 //var result = Questions.Q6_FizzBuzz(54);
 
-var result = InterviewQuestions.IQ1_ReverseArrayBasedOnLastCharacter(["b1", "c2", "x3", "x4", "z0"]);
+//var result = InterviewQuestions.IQ1_ReverseArrayBasedOnLastCharacter(["b1", "c2", "x3", "x4", "z0"]);
 
+var result = Allgorithms.A1_TwoSum(new List<int>() {1,2,2,5},4);
 
 log(result);
