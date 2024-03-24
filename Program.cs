@@ -18,6 +18,8 @@ void log(dynamic arg)
 
 //var result = InterviewQuestions.IQ1_ReverseArrayBasedOnLastCharacter(["b1", "c2", "x3", "x4", "z0"]);
 
-var result = Allgorithms.A1_TwoSum(new List<int>() {1,2,2,5},4);
+//var result = Allgorithms.A1_TwoSum(new List<int>() {1,2,2,5},4);
+
+var result = LeetcodeNeetcodeQuestions.LN1_3Sum(new List<int>(){-1,0,1,2,-1,-4});
 
 log(result);

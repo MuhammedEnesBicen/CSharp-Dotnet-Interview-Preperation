@@ -10,3 +10,11 @@
 
 #### Interview Questions
 - IQ 1 Reverse Array Based On Last Character (Doğuş Teknoloji Coding test on Coensio platform)
+- IQ 2 An Sql Question(AVG, Group BY, Order By, Format)
+
+
+#### Leetcode Neetcode Questions
+- LN 1 3Sum -> Find Triplets from given array whose sum equal to zero
+
+#### Algorithms
+- A 1 Two Pointer
