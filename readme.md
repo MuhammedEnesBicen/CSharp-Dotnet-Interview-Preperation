@@ -18,3 +18,6 @@
 
 #### Algorithms
 - A 1 Two Pointer
+
+#### Sorting Algorithms
+- SA 1 Selection Sort
