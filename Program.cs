@@ -1,30 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-void log(dynamic arg)
-{
-    if (arg is System.String[] || arg is List<int>)
-    {
-        arg = String.Join(", ", arg);
-    }
-    Console.WriteLine("Result: " + arg.ToString());
-}
+﻿// Uncomment the line which contains function that you want to execute
 
-var result = "You didnt run any function yet, please uncomment the function that you want to run and run the program again";
-// Uncomment the line which contains function that you want to execute
+//Questions.Q1_Fibonacci_Series_For_Given_Number(10);
+//Questions.Q2_Dublicate_Characters_In_String("aaabvffrtt");
+//Questions.Q3_Remove_Dublicate_Characters_In_String("aaabvffrtt");
+//Questions.Q4_Palindrome_String_Checker("kalaalak");
+//Questions.Q5_Number_Palindrome_Checker(1234564321);
+//Questions.Q6_FizzBuzz(54);
 
-// result = Questions.Q1_FibonacciSeriesForGivenNumber(10);
-// result = Questions.Q2_DublicateCharactersInString("aaabvffrtt");
-// result = Questions.Q3_RemoveDublicateCharactersInString("aaabvffrtt");
-// result = Questions.Q4_PalindromeStringChecker("kalaalak");
-// result = Questions.Q5_NumberPalindromeChecker(1234564321);
-// result = Questions.Q6_FizzBuzz(54);
+//InterviewQuestions.IQ1_Reverse_Array_Based_On_Last_Character();
 
-// result = InterviewQuestions.IQ1_ReverseArrayBasedOnLastCharacter(["b1", "c2", "x3", "x4", "z0"]);
+//Allgorithms.A1_TwoSum();
 
-// result = Allgorithms.A1_TwoSum(new List<int>() {1,2,2,5},4);
+//LeetcodeNeetcodeQuestions.LN1_3Sum();
+LeetcodeNeetcodeQuestions.LN2_Container_With_Most_Water();
 
-// result = LeetcodeNeetcodeQuestions.LN1_3Sum(new List<int>(){-1,0,1,2,-1,-4});
 
-// log(result);                             // Uncomment to see the result ←↑→
-
-// Sorting Algorithms dont return anything, they just sort the array and print the result
-SortingAlgorithms.SO1_SelectionSort(new int[] { 1, 5, 3, 2, 4, 6, 7, 8, 9, 0 });
+//SortingAlgorithms.SO1_SelectionSort();

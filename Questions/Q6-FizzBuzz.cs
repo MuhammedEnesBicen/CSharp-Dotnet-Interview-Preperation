@@ -2,7 +2,7 @@ using System.Text;
 
 public partial class Questions
 {
-    public static StringBuilder Q6_FizzBuzz(int n)
+    public static void Q6_FizzBuzz(int n)
     {
         StringBuilder sb = new StringBuilder();
         for (int i = 1; i < n; i++)
@@ -25,6 +25,7 @@ public partial class Questions
             }
         }
 
-        return sb;
+        Console.WriteLine($"\n\tResult of Q6_FizzBuzz func: \n{sb}\n");
+
     }
 }

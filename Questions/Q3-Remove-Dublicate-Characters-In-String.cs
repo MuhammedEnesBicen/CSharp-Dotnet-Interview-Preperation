@@ -1,7 +1,7 @@
 using System.Text;
 public partial class Questions
 {
-    public static String Q3_RemoveDublicateCharactersInString(string str)
+    public static void Q3_Remove_Dublicate_Characters_In_String(string str)
     {
 
         List<char> chars = str.ToCharArray().ToList();
@@ -16,9 +16,8 @@ public partial class Questions
             {
                 i++;
             }
-
         }
 
-        return new string(chars.ToArray());
+        Console.WriteLine($"\n\tResult of Q3_Remove_Dublicate_Characters_In_String func: {new string(chars.ToArray())}\n");
     }
 }

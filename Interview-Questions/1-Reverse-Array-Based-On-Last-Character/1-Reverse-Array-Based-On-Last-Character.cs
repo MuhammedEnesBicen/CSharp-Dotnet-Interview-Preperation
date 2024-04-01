@@ -2,8 +2,10 @@ public partial class InterviewQuestions
 {
     // Input: ["bl", "c2", "x3", "x4", "z0"]
     // Output: ["z0", "bl", "c2", "x3", "x4"]
-    public static string[] IQ1_ReverseArrayBasedOnLastCharacter(string[] arr)
+    public static void IQ1_Reverse_Array_Based_On_Last_Character()
     {
+        string[] arr = ["b1", "c2", "x3", "x4", "z0"];
+
         // return SolutionWithoutLINQ(arr); // Call if you want to call second solution
         string ReverseString(string str)
         {
@@ -13,7 +15,10 @@ public partial class InterviewQuestions
         }
 
         var result = arr.Select(a => ReverseString(a)).Order().Select(a => ReverseString(a)).ToArray();
-        return result;
+
+
+        Console.WriteLine($"\n\tResult of IQ1_Reverse_Array_Based_On_Last_Character func: {String.Join(", ", result)}\n");
+
     }
 
     private static string[] SolutionWithoutLINQ(string[] arr)

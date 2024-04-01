@@ -2,7 +2,7 @@ using System.Text;
 
 public partial class Questions
 {
-    public static string Q1_FibonacciSeriesForGivenNumber(int number)
+    public static void Q1_Fibonacci_Series_For_Given_Number(int number)
     {
         int prev2nd = 1, prev = 1, current = 0;
         StringBuilder sb = new StringBuilder();
@@ -14,6 +14,7 @@ public partial class Questions
             prev = current;
             sb.Append(current + " ");
         }
-        return sb.ToString();
+        var result = sb.ToString();
+        Console.WriteLine($"\n\tResult of Q1_Fibonacci_Series_For_Given_Number func: {result}\n");
     }
 }

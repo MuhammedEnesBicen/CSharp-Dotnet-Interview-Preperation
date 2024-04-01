@@ -1,6 +1,6 @@
 public partial class Questions
 {
-    public static string Q5_NumberPalindromeChecker(int num)
+    public static void Q5_Number_Palindrome_Checker(int num)
     {
         bool result = false;
         int originalNumber = num;
@@ -14,7 +14,10 @@ public partial class Questions
             if (reversed == originalNumber) result = true;
         }
 
-        return (result) ?
+        string resultAsString = (result) ?
                  $"{originalNumber} is a palindrome" : $"{originalNumber} is not a palindrome";
+
+        Console.WriteLine($"\n\tResult of Q5_Number_Palindrome_Checker func: {resultAsString}\n");
+
     }
 }

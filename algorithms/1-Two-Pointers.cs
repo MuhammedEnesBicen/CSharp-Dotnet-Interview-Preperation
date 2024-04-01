@@ -1,7 +1,5 @@
 public partial class Allgorithms
 {
-
-
     /// <summary>
     /// Searches for a pair in the given array. If it finds a pair whose sum is equal to the sum parameter, returns it.
     /// 
@@ -10,8 +8,11 @@ public partial class Allgorithms
     /// <param name="nums">Number list</param>
     /// <param name="sum">Desired sum amount</param>
     /// <returns>The pair whose sum is equal to the sum parameter.</returns>
-    public static List<int> A1_TwoSum(List<int> nums, int sum)
+    public static void A1_TwoSum()
     {
+        List<int> nums = new List<int>() { 1, 2, 2, 5 };
+        int sum = 4;
+
         var result = new List<int>();
 
         nums.Sort();
@@ -32,6 +33,7 @@ public partial class Allgorithms
             else lPointer++;
         }
 
-        return result;
+        Console.WriteLine($"\n\tResult of A1_TwoSum func: {String.Join(", ", result)}\n");
+
     }
 }

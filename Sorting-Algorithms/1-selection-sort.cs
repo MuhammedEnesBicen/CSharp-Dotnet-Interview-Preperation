@@ -10,8 +10,9 @@ public partial class SortingAlgorithms
     ///
     ///<param name="arr">Array to be sorted</param>
     ///<returns>Nothing just prints Sorted array</returns>
-    public static void SO1_SelectionSort(int[] arr)
+    public static void SO1_SelectionSort()
     {
+        int[] arr = new int[] { 1, 5, 3, 2, 4, 6, 7, 8, 9, 0 };
         int[] result = new int[arr.Length];
 
         int startIndex = 0;
@@ -34,8 +35,7 @@ public partial class SortingAlgorithms
             startIndex++;
         }
 
-        Console.WriteLine("Selection Sort Result: ");
-        Console.Write($"[ {string.Join(", ", arr)} ]");
+        Console.WriteLine($"\n\tResult of Selection Sort: [ {string.Join(", ", arr)} ]\n");
     }
 
 }

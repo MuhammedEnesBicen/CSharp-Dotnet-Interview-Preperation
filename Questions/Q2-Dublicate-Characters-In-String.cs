@@ -2,7 +2,7 @@ using System.Text;
 
 public partial class Questions
 {
-    public static StringBuilder Q2_DublicateCharactersInString(string str)
+    public static void Q2_Dublicate_Characters_In_String(string str)
     {
         StringBuilder sb = new StringBuilder();
 
@@ -21,6 +21,7 @@ public partial class Questions
             }
         }
 
-        return sb;
+        Console.WriteLine($"\n\tResult of Q2_Dublicate_Characters_In_String func: {sb}\n");
+
     }
 }

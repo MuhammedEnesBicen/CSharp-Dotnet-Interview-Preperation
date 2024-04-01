@@ -6,10 +6,10 @@ public partial class LeetcodeNeetcodeQuestions
     /// |
     /// Question was taken from https://neetcode.io/quiz/3sum
     /// </summary>
-    /// <param name="nums">Number list</param>
-    /// <returns>Triplets  whose sum equal to 0</returns>
-    public static string LN1_3Sum(List<int> nums)
+    /// <returns>Prints Triplets  whose sum equal to 0</returns>
+    public static void LN1_3Sum()
     {
+        List<int> nums = new List<int>() { -1, 0, 1, 2, -1, -4 };
         nums.Sort();
         List<List<int>> result = new();
         for (int i = 0; i < nums.Count; i++)
@@ -19,9 +19,10 @@ public partial class LeetcodeNeetcodeQuestions
         }
         // Operation of getting rid of dublicate triplets 
         // it could be done by removing dublicate elements in num after sorting it
-        return
+        string resultAsString =
         string.Join(" , ",
         result.Select(list => $"[{string.Join(", ", list)}]").Distinct());
+        Console.WriteLine($"\n\tResult of LN1_3Sum func:\n\t{resultAsString}\n");
     }
 
     private static List<List<int>> FindSum(List<int> nums, int startIndex)
